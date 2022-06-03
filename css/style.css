@@ -1,0 +1,402 @@
+@charset 'utf-8';
+@import url('notosanskr/NotoSansKR.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* 공통요소 */
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.header {
+    position: relative;
+    display: block;
+    margin-left: 50px;
+
+}
+
+.header .container {
+    height: 150px;
+}
+
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 0;
+
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.menu {
+    position: absolute;
+    right: 15%;
+    top: 55%;
+    display: block;
+
+}
+
+.gnb {
+    position: relative;
+    display: block;
+}
+
+.gnb li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 45px;
+}
+
+.gnb li a {
+    font-size: 25px;
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url('../images/back.png')no-repeat center;
+    background-size: cover;
+
+}
+.photo h2{
+    position: absolute;
+    display: block;
+    left:50%;
+    top:40%;
+    transform: translatex(-50%);
+    font-size:46px;
+  line-height: 55px;
+  text-align: center;
+    color: #fff;
+}
+
+.visual {
+    position: relative;
+    display: block;
+    padding-top: 30px;
+}
+
+.visual .container {
+    height: 380px;
+}
+
+.v-photo {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    background: url('../images/photo.png') no-repeat center;
+    float: left;
+}
+
+#myself {
+    position: relative;
+    display: block;
+    width: 380px;
+    height: 250px;
+    float: left;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+#myself h2 {
+    padding-bottom: 5px;
+
+}
+
+.skills {
+    position: relative;
+    display: block;
+}
+
+.skills li {
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    float: left;
+}
+
+.skills li .fa-brands {
+    font-size: 40px;
+}
+
+#myself p {
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.myself-right {
+    position: relative;
+    display: block;
+    width: 630px;
+    height: 250px;
+    float: right;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+.myself-right h2 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.myself-right p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+    padding-bottom: 20px;
+
+}
+
+.myself-right span {
+    font-size: 15px;
+}
+
+.sns {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+.sns h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sns ul {
+    position: relative;
+    display: block;
+    margin-left: 34px;
+}
+
+.sns li {
+    position: relative;
+    display: block;
+    float: left;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.sns li a {
+
+    font-size: 20px;
+}
+
+#clone {
+    position: relative;
+    display: block;
+    padding-top: 50px;
+    background-color: skyblue;
+}
+
+#clone .container {}
+
+#clone h2 {
+    position: relative;
+    display: block;
+    font-size: 50px;
+    margin-left: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.c-menu {
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+
+.c-gnb {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.c-gnb li {
+    position: relative;
+    display: block;
+    width: calc(100% / 4);
+    height: 300px;
+    text-align: center;
+    float: left;
+
+}
+
+.caption {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 95%;
+    height: 85%;
+    margin: 0 auto;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+.caption::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.caption:hover::before {
+    opacity: 0.7;
+}
+
+
+.caption img {
+    width: 100%;
+    height: auto;
+}
+
+.caption a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    line-height: 50px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.caption a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.caption:hover a {
+    opacity: 1.0;
+}
+
+.work {
+    transform: translateX(-190%) translateY(-50%);
+}
+
+.git {
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.origin {
+    transform: translateX(90%) translateY(-50%);
+}
+
+.caption-title {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+
+}
+
+.caption:hover .caption-title {
+    color: #D0C9C0;
+}
+
+
+.contact {
+    background-color: paleturquoise;
+
+}
+
+
+
+
+.contact .container {
+    height: 58px;
+}
+
+.contact h2 {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
