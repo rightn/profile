@@ -291,6 +291,7 @@ body {
     width: calc(100% / 4);
     height: 300px;
     text-align: center;
+    margin-left:60px;
     float: left;
 
 }
